@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/admin_dashboard.css">
+    <script src="js/admin_dashboard.js"></script>
+    <link rel="stylesheet " href="https://unpkg.com/boxicons@latest/css/boxicons.min.css ">
+    <link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css ">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+</head>
+
+<body>
+
+    <div class="container ">
+        <div class="left_sidebar">
+            <div class="close_hamburger_btn">
+                <i class='bx bx-x-circle'></i>
+            </div>
+            <div class="logo ">
+                <h2 onclick="myFunction()">Hong Kong Instutude of Technology</h2>
+            </div>
+            <div class="menu_items ">
+                <a href="admin_dashboard.html">
+                    <div class="menu_item ">
+                        <i class='bx bxs-dashboard'></i>
+                        <h3>Dashboard</h3>
+                    </div>
+                </a>
+                <a href="admin_book.html">
+                    <div class="menu_item ">
+                        <i class='bx bxs-dashboard'></i>
+                        <p>book</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="menu_item ">
+                        <i class='bx bx-bulb'></i>
+                        <p>Lecture</p>
+                    </div>
+                </a>
+                <a href="admin_calender.html">
+                    <div class="menu_item ">
+                        <i class='bx bx-calendar'></i>
+                        <p>Calender</p>
+                    </div>
+                </a>
+                <a href="admin_database.html">
+                    <div class="menu_item ">
+                        <i class='bx bx-file-blank'></i>
+                        <p>Database</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="menu_item ">
+                        <i class='bx bx-signal-4'></i>
+                        <p>Attendance</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="menu_item ">
+                        <i class='bx bx-cog'></i>
+                        <p>Logout</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="left_right_sidebar_opener">
+                <div class="hamburger">
+                    <i class='bx bx-menu'></i>
+                </div>
+                <div class="student">
+                    <div class="profile_img">
+                        <img src="https://i.postimg.cc/Sxb6gssQ/img-1.jpg" alt="profile img">
+                    </div>
+                    <div class="profile_name">
+                        <p class="username"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_navbar">
+                <div class="search_box">
+                    <i class='bx bx-search-alt-2'></i> <input type="text " placeholder="Search">
+                </div>
+                <div class="dark_mode_icon" onclick="darkMode()">
+                    <i class='bx bx-moon'></i>
+                    <i class='bx bx-sun'></i>
+                </div>
+            </div>
+            <div class="menu_item_name_and_filter ">
+                <div class="menu_item_name">
+                    <h2>Dashboard</h2>
+                </div>
+
+            </div>
+
+            <div class="hp-grip-wrap">  <!--Dashboard grip wrap-->
+                <div class="w-layout-grid hp-grid">
+                    <div id="w-node-_01" class="grid-block">
+                        <img src="https://geco.hkust.edu.hk/files/01.jpg" alt="" class="grid-bg" />
+                        <div class="grid-overlay">
+                            <h2>
+                                GLOBAL ENGAGEMENT &amp;
+                                <br />
+                                COMMUNICATIONS OFFICE (GECO)
+                            </h2>
+                        </div>
+                        <a href="/about-geco" class="grid-link">Read More</a>
+                    </div>
+                    <div id="w-node-_02" class="grid-block">
+                        <img src="https://geco.hkust.edu.hk/files/07.jpg" alt="" class="grid-bg" />
+                        <div class="grid-overlay"></div>
+                        <a href="/contact" class="grid-link">Contact Us</a>
+                    </div>
+                    <div id="w-node-_03" class="grid-block">
+                        <img src="https://geco.hkust.edu.hk/sites/pao.prod01.ust.hk/files/brand%20marketing-2.jpg"
+                            alt="" class="grid-bg" />
+                        <div class="grid-overlay"></div>
+                        <a href="/brand-marketing" class="grid-link">Brand Marketing</a>
+                    </div>
+                    <div id="w-node-_04" class="grid-block">
+                        <img src="https://geco.hkust.edu.hk/files/02.jpg" alt="" class="grid-bg" />
+                        <div class="grid-overlay"></div>
+                        <a href="/pr-and-media" class="grid-link">PR &amp; Media</a>
+                    </div>
+                    <div id="w-node-_05" class="grid-block">
+                        <img src="https://geco.hkust.edu.hk/files/05.jpg" alt="" class="grid-bg" />
+                        <div class="grid-overlay"></div>
+                        <a href="/communications-and-content" class="grid-link">Communications &amp; Content</a>
+                    </div>
+                </div>
+                <div class="w-layout-grid hp-grid two-cols">
+                    <div id="w-node-_06" class="grid-block">
+                        <img src="https://geco.hkust.edu.hk/sites/pao.prod01.ust.hk/files/global%20engagment-2.jpg"
+                            alt="" class="grid-bg" />
+                        <div class="grid-overlay"></div>
+                        <a href="/about-geco" class="grid-link">Global Engagement &amp; Greater China Affairs</a>
+                    </div>
+                    <div id="w-node-_07" class="grid-block">
+                        <img src="https://geco.hkust.edu.hk/files/06.jpg" alt="" class="grid-bg" />
+                        <div class="grid-overlay"></div>
+                        <a href="/events-and-community-outreach" class="grid-link">Events &amp; Community Outreach</a>
+                    </div>
+                </div>
+                <div style="text-align: right; padding: 15px 0 40px 0;">
+                    <a href="https://validator.w3.org/check?uri=referer"><img alt="" data-entity-type=""
+                            data-entity-uuid="" height="31" src="https://geco.hkust.edu.hk/files/valid-html401.png"
+                            width="88" /></a>
+                    <a href="https://www.w3.org/WAI/WCAG2AA-Conformance"><img alt="" data-entity-type=""
+                            data-entity-uuid="" height="31" src="https://geco.hkust.edu.hk/files/wcag2AA.png"
+                            width="88" /></a>
+                </div>
+            </div>
+            <!-- Chinese version
+                  <div class="hp-grip-wrap">
+                    <div class="w-layout-grid hp-grid">
+                      <div id="w-node-_01" class="grid-block">
+                        <img src="https://geco.hkust.edu.hk/files/01.jpg" alt="" class="grid-bg" />
+                        <div class="grid-overlay">
+                          <h2>環球事務及傳訊處(GECO)</h2>
+                        </div>
+                        <a href="/zh-hant/about-geco" class="grid-link">更多</a>
+                      </div>
+                      <div id="w-node-_02" class="grid-block">
+                        <img src="https://geco.hkust.edu.hk/files/07.jpg" alt="" class="grid-bg" />
+                        <div class="grid-overlay"></div>
+                        <a href="/zh-hant/contact" class="grid-link">聯系我們</a>
+                      </div>
+                      <div id="w-node-_03" class="grid-block">
+                        <img src="https://geco.hkust.edu.hk/sites/pao.prod01.ust.hk/files/brand%20marketing-2.jpg" alt="" class="grid-bg" />
+                        <div class="grid-overlay"></div>
+                        <a href="/zh-hant/brand-marketing" class="grid-link">品牌營銷</a>
+                      </div>
+                      <div id="w-node-_04" class="grid-block">
+                        <img src="https://geco.hkust.edu.hk/files/02.jpg" alt="" class="grid-bg" />
+                        <div class="grid-overlay"></div>
+                        <a href="/zh-hant/pr-and-media" class="grid-link">公共及新聞事務</a>
+                      </div>
+                      <div id="w-node-_05" class="grid-block">
+                        <img src="https://geco.hkust.edu.hk/files/05.jpg" alt="" class="grid-bg" />
+                        <div class="grid-overlay"></div>
+                        <a href="/zh-hant/communications-and-content" class="grid-link">傳訊及內容策劃</a>
+                      </div>
+                    </div>
+                    <div class="w-layout-grid hp-grid two-cols">
+                      <div id="w-node-_06" class="grid-block">
+                        <img src="https://geco.hkust.edu.hk/sites/pao.prod01.ust.hk/files/global%20engagment-2.jpg" alt="" class="grid-bg" />
+                        <div class="grid-overlay"></div>
+                        <a href="/zh-hant/about-geco" class="grid-link">環球連繫及大中華事務</a>
+                      </div>
+                      <div id="w-node-_07" class="grid-block">
+                        <img src="https://geco.hkust.edu.hk/files/06.jpg" alt="" class="grid-bg" />
+                        <div class="grid-overlay"></div>
+                        <a href="/zh-hant/events-and-community-outreach" class="grid-link">活動統籌及外展</a>
+                      </div>
+                    </div>
+                    <div style="text-align: right; padding: 15px 0 40px 0;">
+                      <a href="https://validator.w3.org/check?uri=referer"><img alt="" data-entity-type="" data-entity-uuid="" height="31" src="https://geco.hkust.edu.hk/files/valid-html401.png" width="88" /></a>
+                      <a href="https://www.w3.org/WAI/WCAG2AA-Conformance"><img alt="" data-entity-type="" data-entity-uuid="" height="31" src="https://geco.hkust.edu.hk/files/wcag2AA.png" width="88" /></a>
+                    </div>
+                  </div>
+                    -->
+            
+
+        </div>
+    <div class="right_sidebar ">
+        <div class="notification_and_name ">
+            <div class="close_btn ">
+                <i class='bx bx-x-circle'></i>
+            </div>
+            <div class="bell ">
+                <i class='bx bx-bell'></i>
+                <span></span>
+            </div>
+            <img src="https://i.postimg.cc/Sxb6gssQ/img-1.jpg " alt="profile ">
+            <p class="username"></p>
+            <i class='bx bx-chevron-down'></i>
+        </div>
+        <div class="profile ">
+            <div class="img ">
+                <img src="https://i.postimg.cc/g2M32zcz/image.png " alt="studentImg ">
+            </div>
+            <div class="name_and_class ">
+                <p>Hermione Granger</p>
+                <span>BCA Student</span>
+            </div>
+            <div class="contact_info ">
+                <i class='bx bx-message-rounded-dots'></i>
+                <i class='bx bx-phone-call'></i>
+                <i class='bx bx-envelope'></i>
+            </div>
+            <div class="about ">
+                <h4>About</h4>
+                <p>BCA student studied at ABC School of Commerce and Computer studies. I really enjoy solving problems
+                    as well as making things pretty and easy to use. I can't stop learning new things; the more, the
+                    better.</p>
+            </div>
+            <div class="other_info ">
+                <div class="age ">
+                    <h4>Age</h4>
+                    <p>18</p>
+                </div>
+                <div class="gender ">
+                    <h4>Gender</h4>
+                    <p>Female</p>
+                </div>
+                <div class="dob ">
+                    <h4>DOB</h4>
+                    <p>12/11/2006</p>
+                </div>
+                <div class="address ">
+                    <h4>Address</h4>
+                    <p>USA</p>
+                </div>
+            </div>
+            <div class="student_from_same_class ">
+                <div class="student_same_class_heading ">
+                    <h4>Student from the same class</h4>
+                </div>
+                <div class="student_same_class_img ">
+                    <img src="https://i.postimg.cc/qBbpBPZB/img-2.jpg " alt="img ">
+                    <img src="https://i.postimg.cc/BvPJ7FHN/img1.jpg " alt="img ">
+                    <img src="https://i.postimg.cc/SRkqKt5t/img2.jpg " alt="img ">
+                    <img src="https://i.postimg.cc/xCR77pg2/dahiana-waszaj-XQWfro4LrVs-unsplash.jpg " alt="img ">
+                    <img src="https://i.postimg.cc/9MXPK7RT/news2.jpg " alt="img ">
+                    <span>+12 More</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="js/admin_dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/admin_dashboard.css">
+    <link rel="stylesheet" href="css/admin_attendance.css">
+    <link rel="stylesheet " href="https://unpkg.com/boxicons@latest/css/boxicons.min.css ">
+    <link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css ">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+</head>
+
+<body>
+
+    <div class="container ">
+        <div class="left_sidebar">
+            <div class="close_hamburger_btn">
+                <i class='bx bx-x-circle'></i>
+            </div>
+            <div class="logo ">
+                <h2>Hong Kong Instutude of Technology</h2>
+            </div>
+            <div class="menu_items ">
+                <a href="admin_dashboard.html">
+                    <div class="menu_item ">
+                        <i class='bx bxs-dashboard'></i>
+                        <p>Dashboard</p>
+                    </div>
+                </a>
+                <a href="admin_book.html">
+                    <div class="menu_item ">
+                        <i class='bx bx-book'></i>
+                        <p>Book</p>
+                    </div>
+                </a>
+                <a href="admin_lecture.html">
+                    <div class="menu_item ">
+                        <i class='bx bx-bulb'></i>
+                        <p>Lecture</p>
+                    </div>
+                </a>
+                <a href="admin_attendance.html">
+                    <div class="menu_item ">
+                        <i class='bx bx-signal-4'></i>
+                        <h3>Attendance</h3>
+                    </div>
+                </a>
+                <a onclick="logout()">
+                    <div class="menu_item ">
+                        <i class='bx bx-cog'></i>
+                        <p>Logout</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="left_right_sidebar_opener">
+                <div class="hamburger">
+                    <i class='bx bx-menu'></i>
+                </div>
+                <div class="student">
+                    <div class="profile_img">
+                        <img src="https://i.postimg.cc/Sxb6gssQ/img-1.jpg" alt="profile img">
+                    </div>
+                    <div class="profile_name">
+                        <p class="username"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_navbar">
+                <div class="search_box">
+                    <i class='bx bx-search-alt-2'></i> <input type="text " placeholder="Search">
+                </div>
+                <div class="dark_mode_icon" onclick="darkMode()">
+                    <i class='bx bx-moon'></i>
+                    <i class='bx bx-sun'></i>
+                </div>
+            </div>
+            <div class="menu_item_name_and_filter "> <!--Main Cotent-->
+                <div class="menu_item_name">
+                    <h2>Attendance</h2>
+                </div>
+            </div>
+            <table class="table" id="getdata">
+                <thead>
+                    <tr data-js="activities">
+                    </tr>
+                </thead>
+                <tbody data-js="attendance">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="right_sidebar ">
+            <div class="notification_and_name ">
+                <div class="close_btn ">
+                    <i class='bx bx-x-circle'></i>
+                </div>
+                <p class="username"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/admin_dashboard.js"></script>
+    <script src="js/admin_attendance.js"></script>
+</body>
+
+</html>

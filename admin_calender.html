@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/admin_dashboard.css">
+    <link rel="stylesheet" href="css/admin_calender.css">
+    <link rel="stylesheet " href="https://unpkg.com/boxicons@latest/css/boxicons.min.css ">
+    <link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css ">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+</head>
+
+<body>
+
+    <div class="container ">
+        <div class="left_sidebar">
+            <div class="close_hamburger_btn">
+                <i class='bx bx-x-circle'></i>
+            </div>
+            <div class="logo ">
+                <h2 onclick="myFunction()">Hong Kong Instutude of Technology</h2>
+            </div>
+            <div class="menu_items ">
+                <a href="admin_dashboard.html">
+                    <div class="menu_item ">
+                        <i class='bx bxs-dashboard'></i>
+                        <p>Dashboard</p>
+                    </div>
+                </a>
+                <a href="admin_book.html">
+                    <div class="menu_item ">
+                        <i class='bx bxs-dashboard'></i>
+                        <p>book</p>
+                    </div>
+                </a>
+                <a href="admin_lecture.html">
+                    <div class="menu_item ">
+                        <i class='bx bx-bulb'></i>
+                        <p>Lecture</p>
+                    </div>
+                </a>
+                <!--
+                <a href="admin_calender.html">
+                    <div class="menu_item ">
+                        <i class='bx bx-calendar'></i>
+                        <h3>Calender</h3>
+                    </div>
+                </a>
+                
+                <a href="admin_database.html">
+                    <div class="menu_item ">
+                        <i class='bx bx-file-blank'></i>
+                        <p>Database</p>
+                    </div>
+                </a>
+                -->
+                <a href="admin_attendance.html">
+                    <div class="menu_item ">
+                        <i class='bx bx-signal-4'></i>
+                        <p>Attendance</p>
+                    </div>
+                </a>
+                <a onclick="logout()">
+                    <div class="menu_item ">
+                        <i class='bx bx-cog'></i>
+                        <p>Logout</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="left_right_sidebar_opener">
+                <div class="hamburger">
+                    <i class='bx bx-menu'></i>
+                </div>
+                <div class="student">
+                    <div class="profile_img">
+                        <img src="https://i.postimg.cc/Sxb6gssQ/img-1.jpg" alt="profile img">
+                    </div>
+                    <div class="profile_name">
+                        <p class="username"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_navbar">
+                <div class="search_box">
+                    <i class='bx bx-search-alt-2'></i> <input type="text " placeholder="Search">
+                </div>
+                <div class="dark_mode_icon" onclick="darkMode()">
+                    <i class='bx bx-moon'></i>
+                    <i class='bx bx-sun'></i>
+                </div>
+            </div>
+
+            <div class="tabs">
+                <div class="tab_name">
+                    <h3>Week Schedule</h3>
+                    <p>Month Schedule</p>
+                </div>
+                <div class="three_dots">
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                </div>
+            </div>
+            <div id="container">
+                <div class="active">
+                    <div class="calendar">
+
+                        <div class="timeline">
+                            <div class="spacer"></div>
+                            <div class="time-marker">9 AM</div>
+                            <div class="time-marker">10 AM</div>
+                            <div class="time-marker">11 AM</div>
+                            <div class="time-marker">12 PM</div>
+                            <div class="time-marker">1 PM</div>
+                            <div class="time-marker">2 PM</div>
+                            <div class="time-marker">3 PM</div>
+                            <div class="time-marker">4 PM</div>
+                            <div class="time-marker">5 PM</div>
+                            <div class="time-marker">6 PM</div>
+                            <div class="time-marker">7 PM</div>
+                            <div class="time-marker">8 PM</div>
+                            <div class="time-marker">9 PM</div>
+                            <div class="time-marker">10 PM</div>
+                        </div>
+
+                        <div class="days">
+
+                            <div class="day sun">
+                                <div class="date">
+                                    <p class="date-num">20</p> <!-- call the day on this week -->
+                                    <p class="date-day">Sun</p>
+                                </div>
+                                <div class="events">
+                                    <div class="event start-7 end-9 securities">
+                                        <p class="title">Securities Regulation</p> <!-- Call Lesson Name-->
+                                        <p class="time">7 PM - 9 PM</p>
+                                        <!-- Call Time, Maybe you can add who teach or the details of lesson -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="day mon">
+                                <div class="date">
+                                    <p class="date-num">21</p> <!-- call the day on this week -->
+                                    <p class="date-day">Mon</p>
+                                </div>
+                                <div class="events">
+                                    <div class="event start-2 end-5 securities">
+                                        <p class="title">Securities Regulation</p> <!-- Call Lesson Name-->
+                                        <p class="time">2 PM - 5 PM</p>
+                                        <!-- Call Time, Maybe you can add who teach or the details of lesson -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="day tues">
+                                <div class="date">
+                                    <p class="date-num">22</p> <!-- call the day on this week -->
+                                    <p class="date-day">Tue</p>
+                                </div>
+                                <div class="events">
+
+                                    <div class="event start-10 end-12 corp-fi">
+                                        <p class="title">Corporate Finance</p> <!-- Call Lesson Name-->
+                                        <p class="time">10 AM - 12 PM</p>
+                                        <!-- Call Time, Maybe you can add who teach or the details of lesson -->
+                                    </div>
+
+                                    <div class="event start-1 end-4 ent-law">
+                                        <p class="title">Entertainment Law</p> <!-- Call Lesson Name-->
+                                        <p class="time">1PM - 4PM</p>
+                                        <!-- Call Time, Maybe you can add who teach or the details of lesson -->
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="day wed">
+                                <div class="date">
+                                    <p class="date-num">23</p> <!-- call the day on this week -->
+                                    <p class="date-day">Wed</p>
+                                </div>
+                                <div class="events">
+                                    <div class="event start-12 end-1 writing">
+                                        <p class="title">Writing Seminar</p>
+                                        <p class="time">12:00 - 13:00</p>
+                                    </div>
+                                    <div class="event start-2 end-6 securities">
+                                        <p class="title">Securities Regulation</p>
+                                        <p class="time">2 PM - 5 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="day thurs">
+                                <div class="date">
+                                    <p class="date-num">24</p> <!-- call the day on this week -->
+                                    <p class="date-day">Thu</p>
+                                </div>
+                                <div class="events">
+                                    <div class="event start-10 end-12 corp-fi">
+                                        <p class="title">Corporate Finance</p> <!-- Call Lesson Name-->
+                                        <p class="time">10 AM - 12 PM</p>
+                                        <!-- Call Time, Maybe you can add who teach or the details of lesson -->
+                                    </div>
+                                    <div class="event start-1 end-4 ent-law">
+                                        <p class="title">Entertainment Law</p> <!-- Call Lesson Name-->
+                                        <p class="time">1PM - 4PM</p>
+                                        <!-- Call Time, Maybe you can add who teach or the details of lesson -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="day fri">
+                                <div class="date">
+                                    <p class="date-num">25</p> <!-- call the day on this week -->
+                                    <p class="date-day">Fri</p>
+                                </div>
+                                <div class="events">
+                                </div>
+                            </div>
+
+                            <div class="day wed">
+                                <div class="date">
+                                    <p class="date-num">26</p> <!-- call the day on this week -->
+                                    <p class="date-day">Sat</p>
+                                </div>
+                                <div class="events">
+                                    <div class="event start-12 end-1 writing">
+                                        <p class="title">Writing Seminar</p> <!-- Call Lesson Name-->
+                                        <p class="time">12:00 - 13:00</p>
+                                        <!-- Call Time, Maybe you can add who teach or the details of lesson -->
+                                    </div>
+                                    <div class="event start-2 end-5 securities">
+                                        <p class="title">Securities Regulation</p> <!-- Call Lesson Name-->
+                                        <p class="time">2 PM - 5 PM</p>
+                                        <!-- Call Time, Maybe you can add who teach or the details of lesson -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    Content of Tab 2
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right_sidebar ">
+            <div class="notification_and_name ">
+                <div class="close_btn ">
+                    <i class='bx bx-x-circle'></i>
+                </div>
+                <!-- <div class="bell ">
+                    <i class='bx bx-bell'></i>
+                    <span></span>
+                </div> -->
+                <!-- <img src="https://i.postimg.cc/Sxb6gssQ/img-1.jpg " alt="profile "> -->
+                <p class="username"></p>
+                <!-- <i class='bx bx-chevron-down'></i> -->
+            </div>
+            <!-- <div class="profile ">
+                <div class="img ">
+                    <img src="https://i.postimg.cc/g2M32zcz/image.png " alt="studentImg ">
+                </div>
+                <div class="name_and_class ">
+                    <p>Hermione Granger</p>
+                    <span>BCA Student</span>
+                </div>
+                <div class="contact_info ">
+                    <i class='bx bx-message-rounded-dots'></i>
+                    <i class='bx bx-phone-call'></i>
+                    <i class='bx bx-envelope'></i>
+                </div>
+                <div class="about ">
+                    <h4>About</h4>
+                    <p>BCA student studied at ABC School of Commerce and Computer studies. I really enjoy solving
+                        problems as well as making things pretty and easy to use. I can't stop learning new things; the
+                        more, the better.</p>
+                </div>
+                <div class="other_info ">
+                    <div class="age ">
+                        <h4>Age</h4>
+                        <p>18</p>
+                    </div>
+                    <div class="gender ">
+                        <h4>Gender</h4>
+                        <p>Female</p>
+                    </div>
+                    <div class="dob ">
+                        <h4>DOB</h4>
+                        <p>12/11/2006</p>
+                    </div>
+                    <div class="address ">
+                        <h4>Address</h4>
+                        <p>USA</p>
+                    </div>
+                </div>
+                <div class="student_from_same_class ">
+                    <div class="student_same_class_heading ">
+                        <h4>Student from the same class</h4>
+                    </div>
+                    <div class="student_same_class_img ">
+                        <img src="https://i.postimg.cc/qBbpBPZB/img-2.jpg " alt="img ">
+                        <img src="https://i.postimg.cc/BvPJ7FHN/img1.jpg " alt="img ">
+                        <img src="https://i.postimg.cc/SRkqKt5t/img2.jpg " alt="img ">
+                        <img src="https://i.postimg.cc/xCR77pg2/dahiana-waszaj-XQWfro4LrVs-unsplash.jpg " alt="img ">
+                        <img src="https://i.postimg.cc/9MXPK7RT/news2.jpg " alt="img ">
+                        <span>+12 More</span>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script src="js/admin_dashboard.js"></script>
+    <script src="js/admin_calender.js"></script>
+</body>
+
+</html>

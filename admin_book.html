@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/admin_dashboard.css">
+    <link rel="stylesheet " href="https://unpkg.com/boxicons@latest/css/boxicons.min.css ">
+    <link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css ">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+</head>
+
+<body>
+
+    <div class="container ">
+        <div class="left_sidebar">
+            <div class="close_hamburger_btn">
+                <i class='bx bx-x-circle'></i>
+            </div>
+            <div class="logo ">
+                <h2>Hong Kong Instutude of Technology</h2>
+            </div>
+            <div class="menu_items ">
+                <a href="admin_dashboard.html">
+                    <div class="menu_item ">
+                        <i class='bx bxs-dashboard'></i>
+                        <p>Dashboard</p>
+                    </div>
+                </a>
+                <a href="admin_book.html">
+                    <div class="menu_item ">
+                        <i class='bx bx-book'></i>
+                        <h3>Book</h3>
+                    </div>
+                </a>
+                <a href="admin_lecture.html">
+                    <div class="menu_item ">
+                        <i class='bx bx-bulb'></i>
+                        <p>Lecture</p>
+                    </div>
+                </a>
+                <!--
+                <a href="admin_calender.html">
+                    <div class="menu_item ">
+                        <i class='bx bx-calendar'></i>
+                        <p>Calender</p>
+                    </div>
+                </a>
+                -->
+                <a href="admin_attendance.html">
+                    <div class="menu_item ">
+                        <i class='bx bx-signal-4'></i>
+                        <p>Attendance</p>
+                    </div>
+                </a>
+                <a onclick="logout()">
+                    <div class="menu_item ">
+                        <i class='bx bx-cog'></i>
+                        <p>Logout</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="left_right_sidebar_opener">
+                <div class="hamburger">
+                    <i class='bx bx-menu'></i>
+                </div>
+                <div class="student">
+                    <div class="profile_img">
+                        <img src="https://i.postimg.cc/Sxb6gssQ/img-1.jpg" alt="profile img">
+                    </div>
+                    <div class="profile_name">
+                        <p class="username"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_navbar">
+                <div class="search_box">
+                    <i class='bx bx-search-alt-2'></i> <input type="text " placeholder="Search">
+                </div>
+                <div class="dark_mode_icon" onclick="darkMode()">
+                    <i class='bx bx-moon'></i>
+                    <i class='bx bx-sun'></i>
+                </div>
+            </div>
+            <div class="menu_item_name_and_filter ">
+                <div class="menu_item_name">
+                    <h2>Book</h2>
+                </div>
+                <div class="filter_and_sort">
+                    <div class="sort sort_and_filter">
+                        <p>Sort</p>
+                        <i class='bx bx-sort-down'></i>
+                    </div>
+                    <div class="filter sort_and_filter">
+                        <p>Filter</p>
+                        <i class='bx bx-filter'></i>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <table id="getdata">
+                    <tr>
+                        <th>Book Name</th>
+                        <th>Book ID</th>
+                        <th>Category</th>
+                        <th>Book Status</th>
+                        <th>Borrower</th>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <div class="right_sidebar ">
+            <div class="notification_and_name ">
+                <div class="close_btn ">
+                    <i class='bx bx-x-circle'></i>
+                </div>
+                <p class="username"></p>
+            </div>
+            <div class="profile ">
+                <form class="createform">
+                    <div><label>Name: </label>
+                        <input type="text" name="name" placeholder="book name">
+                    </div>
+                    <div>
+                        <label>Category: </label>
+                        <select name="category">
+                            <option value="Fiction">Fiction</option>
+                            <option value="Biography">Biography</option>
+                            <option value="Memoir">Memoir</option>
+                            <option value="Autobiography">Autobiography</option>
+                            <option value="Action fiction">Action fiction</option>
+                            <option value="Anthology">Anthology</option>
+                            <option value="Mystery">Mystery</option>
+                            <option value="Chapter book">Chapter book</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Author: </label>
+                        <input type="text" name="author" placeholder="author name">
+                    </div>
+                    <div>
+                        <label>Description: </label>
+                        <input type="text" name="description" placeholder="description">
+                    </div>
+                    <input type="submit" id="submit">
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/admin_book.js"></script>
+</body>
+
+</html>

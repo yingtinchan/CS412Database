@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/386743be54.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Sign in</title>
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="login">
+            <h2 class="login-title">Login</h2>
+            <p class="notice">Please login to access the system</p>
+            <form class="form-login">
+                <label for="id">Input ID</label>
+                <div class="input-id">
+                    <i class="fas fa-envelope icon"></i>
+                    <input id="userid" type="id" name="id" placeholder="Enter your ID" required>
+                </div>
+                <label for="password">Password</label>
+                <div class="input-password">
+                    <i class="fas fa-lock icon"></i>
+                    <input id="password" type="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="checkbox">
+                    <label for="remember">
+                        <input type="checkbox" name="remember">
+                        Remember me
+                    </label>
+                </div>
+                <button id="loginbu" type="submit"><i class="fas fa-door-open"></i> Login</button>
+                <button id="cancel" onclick=back()>Cancael</button>
+            </form>
+            <a href="forgetpwdpage.html">Forgot your password?</a>
+        </div>
+        <div class="background">
+            <div class="backgorund-title">
+                <h1>香港專上科技學院<br>Hong Kong Institution of Technology</h1>
+            </div>
+        </div>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
