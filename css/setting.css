@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: linear-gradient(17deg, green 10% 20%, rgba(158, 189, 19, 0.5), rgba(158, 189, 19, 0.2), rgba(0, 133, 82, 0.5)), url(../upload/history_pic.jpg) no-repeat;
+  }
+
+  .login-title {
+    text-align: center;
+  }
+  
+
+.form-login {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+
+.form-login label {
+    text-align: left;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: block;
+    color: #666;
+  }
+  
+  .input-name,
+  .input-email,
+  .input-password {
+    width: 100%;
+    background: #ededed;
+    border-radius: 25px;
+    margin: 4px 0 10px 0;
+    padding: 10px;
+    display: flex;
+  }
+  
+  .icon {
+    padding: 4px;
+    color: #666;
+    min-width: 30px;
+    text-align: center;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 4px 0;
+    outline: none;
+  }
+
+  .login {
+    position: absolute;
+    border-radius: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    width: 20vw;
+    padding: 10px;
+    background: #FFF;
+  }
+
+  .background h1 {
+    position: absolute;
+    color: #76c46c;
+    left: 30%;
+    font-size: medium;
+  }
+
+button {
+    width: 100%;
+    border: 0;
+    border-radius: 25px;
+    padding: 14px;
+    background: #008552;
+    color: #FFF;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: ease all 0.3s;
+  }
