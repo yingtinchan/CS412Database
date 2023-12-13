@@ -1,0 +1,9 @@
+curl --location --request GET '127.0.0.1:3001/user/teacher' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkEwMDAwMDAwMSIsIm5hbWUiOiJhZG1pbjEiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MDEwNTMzMTYsImV4cCI6MTcwMTA1NjkxNn0.fWtVgOKuAPDK5NDGzaLc_LJug3FCtr6Dq3XqgwVjblY' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "student_id":"T00000002",
+    "name":"teacher2",
+    "password":"pwT2",
+    "email":"teacher2@test.com"
+}'

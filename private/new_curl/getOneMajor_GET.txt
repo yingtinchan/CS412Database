@@ -1,0 +1,2 @@
+curl --location '34.150.5.152:3001/major/BBA' \
+--data ''

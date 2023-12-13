@@ -1,0 +1,7 @@
+curl --location --request PATCH '34.150.5.152:3001/user/admin/3' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkEwMDAwMDAwMSIsIm5hbWUiOiJhZG1pbjEiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MDEwNTMzMTYsImV4cCI6MTcwMTA1NjkxNn0.fWtVgOKuAPDK5NDGzaLc_LJug3FCtr6Dq3XqgwVjblY' \
+--data-raw '{
+    "name":"adminName1",
+    "email":"admin1@test.com"
+}'

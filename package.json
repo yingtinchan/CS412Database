@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "@nestjs-modules/mailer": "^1.9.1",
+    "@nestjs/jwt": "^10.2.0",
+    "@nestjs/platform-express": "^10.2.10",
+    "@nestjs/swagger": "^7.1.14",
+    "@nestjs/typeorm": "^10.0.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/chance": "^1.1.6",
+    "bcryptjs": "^2.4.3",
+    "chance": "^1.1.11",
+    "ejs": "^3.1.9",
+    "faker": "^5.5.3",
+    "mailer": "^0.6.7",
+    "mysql": "^2.18.1",
+    "swagger-ui-express": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "update": "^0.7.4",
+    "yarn": "^1.22.19"
+  },
+  "name": "schoolweb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^8.2.0",
+    "@types/faker": "^6.6.9",
+    "@types/node": "^20.9.0"
+  }
+}
